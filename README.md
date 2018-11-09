@@ -5,9 +5,9 @@ Actually, I play with animation on my local. But, After watching this [Get Anima
 ##### Cover Animation
 This projec will cover following animation
 
-- [ ] View Animation (on progress)
+- [ ] View Animation
 - [ ] Value Animator
-- [ ] Object Animator
+- [ ] Object Animator (on progress)
 
 
 [1]: https://www.youtube.com/watch?v=N_x7SV3I3P0
