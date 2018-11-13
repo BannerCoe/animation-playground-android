@@ -18,7 +18,7 @@ class AnimatorActivity : AppCompatActivity() {
         setContentView(R.layout.activity_animator)
 
         //ObjectAnimator
-
+        //general purpose,properly
         ObjectAnimator.ofFloat(tv_title, View.ALPHA, 0f, 1f).apply {
             duration = 1300
             interpolator = DecelerateInterpolator()
@@ -28,6 +28,7 @@ class AnimatorActivity : AppCompatActivity() {
 
 
         //PropertyValueHolder
+        //multiple properties on the same object
         val scaleX = PropertyValuesHolder.ofFloat(View.SCALE_X, 0.5f, 1f)
         val scaleY = PropertyValuesHolder.ofFloat(View.SCALE_Y, 0.5f, 1f)
         val alpha = PropertyValuesHolder.ofFloat(View.ALPHA, 0f, 1f)
@@ -38,7 +39,23 @@ class AnimatorActivity : AppCompatActivity() {
             interpolator = OvershootInterpolator()
         }.start()
 
+
+        //ViewPropertyAnimator
+        //Fire-n-Forget
+        //No  animation coordination
+        //no reverse// repeat // seeking
+        fab_android.animate()
+                .scaleX(1.5f).scaleY(1.5f).alpha(1f)
+                .setDuration(600)
+                .setInterpolator(OvershootInterpolator())
+                .start()
+
         //TODO:animator set
+        //choreograph a set of animations
+        //coming soon
+
+
+        //TODO:ValueAnimator
         //coming soon
     }
 }

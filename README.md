@@ -3,7 +3,7 @@
 Actually, I play with animation on my local. But, After watching this [Get Animated (Android Dev Summit '18)][1]. I got a idea to make simple project that are arranged by type of animation according to that talk.
 
 ##### Cover Animation
-This projec will cover following animation
+This project will cover following animation
 
 - [ ] View Animation
 - [ ] Value Animator
